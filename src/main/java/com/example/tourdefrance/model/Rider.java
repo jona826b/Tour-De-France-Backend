@@ -20,6 +20,9 @@ public class Rider {
   @Column(name = "rider_name")
   private String riderName;
 
+  @Column(name = "nationality")
+  private String nationality;
+
   @Column(name = "total_time")
   private Double totalTime;
 

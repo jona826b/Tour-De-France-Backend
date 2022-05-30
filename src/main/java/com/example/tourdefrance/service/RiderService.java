@@ -3,6 +3,7 @@ package com.example.tourdefrance.service;
 import com.example.tourdefrance.model.Rider;
 import com.example.tourdefrance.repository.RiderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.crossstore.ChangeSetPersister;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -36,5 +37,10 @@ public class RiderService {
   public Rider saveRider(Rider rider) {
     return riderRepository.save(rider);
   }
+
+  public Rider save(Rider rider) {
+    return rider;
+  }
+
 }
 
